@@ -1,0 +1,32 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "mern tutrorial",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "mernstart": "npm start --prefix mern_frontend",
+    "dev": "concurrently \"npm run server \" npm run mernstart",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelkerosi/mern.git"
+  },
+  "author": "samuel kerosi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelkerosi/mern/issues"
+  },
+  "homepage": "https://github.com/samuelkerosi/mern#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
